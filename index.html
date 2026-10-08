@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>مشروع وهمي | حمصة قهوة</title>
+    <style>
+      body {
+    direction: rtl;
+    background-color: #FFF8E7;
+    color: #4B2E2E;
+    margin: 30px;
+}
+
+/* العنوان الرئيسي */
+h1 {
+    color: #6F4E37;
+    text-align: center;
+    
+}
+
+/* العناوين */
+h2 {
+    color: #8B5E3C;
+}
+
+h3 {
+    color: #A0522D;
+}
+
+/* الفقرات */
+p {
+    line-height: 2;
+}
+
+/* الخطوط الفاصلة */
+hr {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #D2B48C;
+    margin: 30px 0;
+}
+
+/* جدول الأسعار */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #8B5E3C;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #D2B48C;
+}
+
+caption {
+    color: #6F4E37;
+    margin: 10px;
+}
+
+/* نموذج الطلب */
+form {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #D2B48C;
+    border-radius: 15px;
+
+    padding: 20px;
+    margin: 20px 0;
+}
+
+/* حقول الكتابة والقائمة */
+input[type="text"],
+select {
+    padding: 8px;
+    margin: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #8B5E3C;
+    border-radius: 5px;
+}
+
+/* زر تأكيد الطلب */
+input[type="submit"] {
+    background-color: #8B5E3C;
+    color: white;
+
+    border-style: solid;
+    border-width: 2px;
+    border-color: #6F4E37;
+    border-radius: 10px;
+
+    padding: 10px 20px;
+    margin: 10px;
+}
+
+/* الروابط */
+a {
+    color: #8B5E3C;
+}
+    </style>
+</head>
+
+<body dir="rtl">
+
+    <!-- بداية الصفحة -->
+    <h1>حمصة قهوة</h1>
+
+    <h2>
+        قهوة... <em>بطعم مختلف</em>
+    </h2>
+
+    <p>
+        في حمصة قهوة، نختار حبوبنا بعناية لنقدم لك
+        قهوة غنية بالنكهة ولحظات تستحق أن تُعاش.
+    </p>
+
+    <h3>
+        عرض الافتتاح خصم <strong>20%</strong>
+    </h3>
+
+    <hr>
+
+
+    <!-- المنيو -->
+    <h2>المنيو</h2>
+
+    <ul>
+        <li>V60</li>
+        <li>كابتشينو</li>
+        <li>شوكولاتة ساخنة</li>
+        <li>موهيتو ليمون ونعناع</li>
+    </ul>
+
+
+    <!-- جدول الأسعار -->
+    <h2>أسعار المشروبات</h2>
+
+    <table>
+
+        <caption>قائمة مشروبات حمصة قهوة</caption>
+
+        <tr>
+            <th>المشروب</th>
+            <th>الحجم</th>
+            <th>السعر</th>
+            <th>النوع</th>
+        </tr>
+
+        <tr>
+            <td>V60</td>
+            <td>وسط</td>
+            <td>22 ريال</td>
+            <td>حار / بارد</td>
+        </tr>
+
+        <tr>
+            <td>كابتشينو</td>
+            <td>صغير</td>
+            <td>17 ريال</td>
+            <td>حار</td>
+        </tr>
+
+        <tr>
+            <td>شوكولاتة ساخنة</td>
+            <td>كبير</td>
+            <td>25 ريال</td>
+            <td>حار</td>
+        </tr>
+
+        <tr>
+            <td>موهيتو ليمون ونعناع</td>
+            <td>كبير</td>
+            <td>18 ريال</td>
+            <td>بارد</td>
+        </tr>
+
+        <tr>
+            <td colspan="4">
+                الأسعار تشمل ضريبة القيمة المضافة
+            </td>
+        </tr>
+
+    </table>
+
+    <hr>
+
+
+    <!-- طريقة الطلب -->
+    <h2>طريقة الطلب</h2>
+
+    <ol>
+        <li>اختر مشروبك</li>
+        <li>اختر الحجم</li>
+        <li>اختر الإضافات</li>
+        <li>حدد الفرع</li>
+        <li>أكد طلبك</li>
+    </ol>
+
+    <hr>
+
+
+    <!-- نموذج الطلب -->
+    <h2>اطلب مشروبك</h2>
+
+    <form>
+
+        <!-- اسم العميل -->
+        <label for="name">اسم العميل:</label>
+        <input type="text" id="name" name="name">
+
+        <br><br>
+
+        <!-- رقم الهاتف -->
+        <label for="phone">رقم الهاتف:</label>
+        <input type="text" id="phone" name="phone">
+
+        <br><br>
+
+
+        <!-- حجم المشروب -->
+        <p>حجم المشروب:</p>
+
+        <input type="radio" id="small" name="size" value="small">
+        <label for="small">صغير</label>
+
+        <input type="radio" id="medium" name="size" value="medium">
+        <label for="medium">وسط</label>
+
+        <input type="radio" id="large" name="size" value="large">
+        <label for="large">كبير</label>
+
+
+        <!-- الإضافات -->
+        <p>الإضافات:</p>
+
+        <input type="checkbox" id="sugar" name="sugar">
+        <label for="sugar">سكر</label>
+
+        <br>
+
+        <input type="checkbox" id="caramel" name="caramel">
+        <label for="caramel">كراميل</label>
+
+        <br>
+
+        <input type="checkbox" id="milk" name="milk">
+        <label for="milk">حليب إضافي</label>
+
+        <br><br>
+
+
+        <!-- اختيار الفرع -->
+        <label for="branch">اختر الفرع:</label>
+
+        <select id="branch" name="branch">
+            <option value="tahlia">التحلية</option>
+            <option value="rawdah">الروضة</option>
+            <option value="obhor">أبحر الشمالية</option>
+        </select>
+
+        <br><br>
+
+
+        <!-- زر تأكيد الطلب -->
+        <input type="button" value="تأكيد الطلب" onclick="confirmOrder()">
+
+    </form>
+
+    <hr>
+
+
+    <!-- معلومات المقهى -->
+    <h2>تواصل معنا</h2>
+
+    <p>
+        <strong>حمصة قهوة</strong>
+        <br>
+        جدة، المملكة العربية السعودية
+        <br>
+        ساعات العمل: 7 صباحًا - 11 مساءً
+    </p>
+
+    <a href="https://www.instagram.com/">
+        تابعنا على إنستقرام
+    </a>
+
+    <br>
+
+    <a href="https://maps.google.com/">
+        موقع المقهى
+    </a>
+    <script>
+    function confirmOrder() {
+        alert("تم استلام طلبك ☕ شكرًا لاختيارك حمصة قهوة!");
+    }
+</script>
+
+</body>
+
+</html>
